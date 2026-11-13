@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Computer Science portfolio projects featuring web development, creative programming and interactive digital experiences.">
+  <title>Projects | My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="titlebar">
+    <span class="dots" aria-hidden="true">● ● ●</span>
+    <span>portfolio — Visual Studio Code</span>
+    <span>⌘</span>
+  </header>
+
+  <div class="workspace">
+    <aside class="sidebar" aria-label="Portfolio navigation">
+      <a href="index.html" title="Home" aria-label="Home">⌂</a>
+      <a href="projects.html" title="Projects" aria-label="Projects" aria-current="page">▦</a>
+      <a href="index.html#education" title="Education" aria-label="Education">▤</a>
+      <a href="index.html#about" title="About" aria-label="About">◇</a>
+      <a href="contact.html" title="Contact" aria-label="Contact">✉</a>
+    </aside>
+
+    <main>
+      <nav class="tabs" aria-label="Sections">
+        <a href="index.html">index.html</a>
+        <a href="projects.html" aria-current="page">projects.html</a>
+        <a href="index.html#education">education.json</a>
+        <a href="index.html#about">about.md</a>
+        <a href="contact.html">contact.html</a>
+      </nav>
+
+      <div class="content">
+        <section class="section" id="projects">
+          <div class="section-heading">
+            <div>
+              <p class="comment">// projects.js</p>
+              <h2>Selected <span>Projects</span></h2>
+            </div>
+
+            <span class="muted">04 projects</span>
+          </div>
+
+          <p class="intro">
+            A collection of university projects exploring
+            frontend development, web design, programming
+            and interactive digital experiences.
+          </p>
+
+          <div class="filters" role="group" aria-label="Filter projects">
+            <button
+              type="button"
+              class="filter active"
+              data-filter="all"
+              aria-pressed="true">
+              All Projects
+            </button>
+
+            <button
+              type="button"
+              class="filter"
+              data-filter="current"
+              aria-pressed="false">
+              Goldsmiths / Current
+            </button>
+
+            <button
+              type="button"
+              class="filter"
+              data-filter="2025"
+              aria-pressed="false">
+              City / 2025
+            </button>
+          </div>
+
+          <div class="project-grid" id="project-grid"></div>
+        </section>
+
+        <footer>
+          <span>© 2026 · Developer Portfolio</span>
+          <span>Built with HTML, CSS & JavaScript</span>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <div class="statusbar">
+    <span>⑂ main &nbsp; ✓ Portfolio ready</span>
+    <span>HTML &nbsp; UTF-8 &nbsp; Consolas</span>
+  </div>
+
+  <dialog id="project-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-header">
+      <span>project.details</span>
+
+      <button
+        type="button"
+        id="close-dialog"
+        aria-label="Close project details">
+        ✕
+      </button>
+    </div>
+
+    <div class="dialog-body">
+      <p class="comment" id="dialog-date"></p>
+      <h2 id="dialog-title"></h2>
+      <p id="dialog-description"></p>
+      <div class="tags" id="dialog-tags"></div>
+      <div class="gallery" id="dialog-gallery"></div>
+    </div>
+  </dialog>
+</body>
+</html>
